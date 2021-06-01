@@ -1,0 +1,16 @@
+body{
+    background-color: antiquewhite;
+    color:midnightblue;
+}
+h2{
+    background-color: gold;
+    text-align: center;
+    color:darkslategray;
+}
+.para2{
+    background-color:powderblue;
+    padding: 5px;
+}
+strong{
+    color:darkblue;
+}
