@@ -1,0 +1,146 @@
+body {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.clock {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 35px solid #00A99E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.clock .twelve {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background: #000;
+    left: 10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.clock .six {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background: #000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.clock .one {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #000;
+    left: 50%;
+    transform: rotate(30deg);
+    right: 0;
+    top: 7%;
+    margin: 0 auto;
+}
+
+.clock .two {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #000;
+    left: 50%;
+    transform: rotate(30deg);
+    right: 0;
+    top: 7%;
+    margin: 0 auto;
+}
+
+.clock .center {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #000;
+    left: 0;
+    right: 0;
+    bottom: 49%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.second-needle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: rotate 60s linear infinite;
+}
+
+.clock .second {
+    background: rgb(219, 37, 37);
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    top: 10%;
+    border: 2%;
+    width: 1%;
+    z-index: 8;
+}
+
+.min-needle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: rotate 1200s linear 30s infinite;
+}
+
+.clock .min {
+    background: rgb(12, 12, 12);
+    height: 30%;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    border: 2%;
+    width: 1.5%;
+    z-index: 8;
+}
+
+.hr-needle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3000s linear 120s infinite;
+}
+
+.clock .hr {
+    background: #000;
+    height: 20%;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    border: 2%;
+    width: 2%;
+    z-index: 8;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
