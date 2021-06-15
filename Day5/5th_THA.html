@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="calc-container ">
+    
+            <h1>CALCULATOR</h1>
+            <br>
+    
+            <input id="box" value="" type="text" readonly placeholder="0">
+            <input id="boxok" value="" type="text" readonly placeholder="0">
+            
+            <div class="btn-container">
+            <div class="row">
+                    <button class="btn" onclick="number('1')" ><strong>1</strong></button>
+                    <button class="btn" onclick="number('2')" ><strong>2</strong></button>
+                    <button class="btn" onclick="number('3')"><strong>3</strong></button>
+                    <button class="btn cbtn" onclick="clearit()"><strong>C</strong></button>
+            </div>
+            <div class="row">
+                    <button class="btn" onclick="number('4')" ><strong>4</strong></button>
+                    <button class="btn" onclick="number('5')" ><strong>5</strong></button>
+                    <button class="btn" onclick="number('6')" ><strong>6</strong></button>
+                    <button class="btn cbtn" onclick="backspace()" ><strong>⟸</strong></button>
+            </div>
+            <div class="row">
+                    <button class="btn" onclick="number('7')"><strong>7</strong></button>
+                    <button class="btn" onclick="number('8')"><strong>8</strong></button>
+                    <button class="btn" onclick="number('9')"><strong>9</strong></button>
+                    <button class="btn op" onclick="number('+')" ><strong>+</strong></button>
+            </div>
+            <div class="row">
+                    <button class="btn" onclick="number('.')"><strong>.</strong></button>
+                    <button class="btn" onclick="number('0')"><strong>0</strong></button>
+                    <button class="btn op" onclick="number('*')"><strong>*</strong></button>
+                    <button class="btn op" onclick="number('-')"><strong>-</strong></button>
+            </div>
+            <div class="row">   
+				            <button class="btn solvebtn" onclick="solve()"><strong>=</strong></button>
+				            <button class="btn op" onclick="number('/')"><strong>/</strong></button>
+                    <button class="btn op" onclick="number('%')"><strong>%</strong></button>
+        
+            </div>	
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
