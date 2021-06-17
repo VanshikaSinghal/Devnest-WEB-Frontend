@@ -1,0 +1,14 @@
+class Cylinder {
+  constructor(radius, height) {
+    this.radius = radius;
+    this.height = height;
+  }
+
+  calculateVolume() {
+    const volume = Math.PI * this.radius * this.radius * this.height;
+    return volume.toFixed(4);
+  }
+}
+
+const cylinder = new Cylinder(5, 10);
+console.log(cylinder.calculateVolume());
