@@ -22,12 +22,14 @@ function flipCard() {
     }
 
     if (!hasFlippedCard) {
+        // first click
         hasFlippedCard = true;
         firstCard = this;
 
         return;
     }
 
+    hasFlippedCard = false;
     secondCard = this;
     checkForMatch();
 }
