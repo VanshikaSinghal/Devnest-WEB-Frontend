@@ -57,15 +57,24 @@ const cont = document.querySelector('.container');
 let i = 0;
 let score = 0;
 
-const startingMinutes = 10;
+const startingMinutes = 1;
 let time = startingMinutes * 60;
 
 function updateCountdown() {
     const minutes = Math.floor(time / 60);
     let seconds = time % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
-    countdown.innerHTML = `<h3>Time : ${minutes}:${seconds}</h3>`;
-    time--;
+    if (minutes < 0 || seconds < 0) {
+        game.style.display = "none";
+        scoreCard.style.display = "block";
+        scoreCard.innerHTML = `
+      <h2>Times Up! <br> You scored ${score}/${arr.length} </h2>
+      <button class="btn" onClick="location.reload()">Play Again</button>
+      `
+    } else {
+        countdown.innerHTML = `<h3>Time : ${minutes}:${seconds}</h3>`;
+        time--;
+    }
 }
 
 startQuiz.addEventListener('click', () => {
@@ -95,6 +104,7 @@ submit.addEventListener('click', () => {
       <button class="btn" onClick="location.reload()">Play Again</button>
       `
     }
+
 });
 
 function loadQuestions() {
