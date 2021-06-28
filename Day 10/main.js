@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let moves = 40;
+let moves = 35;
 let score = 0;
 const movesSpan = document.querySelector(".moves");
 const scoreSpan = document.querySelector(".score");
