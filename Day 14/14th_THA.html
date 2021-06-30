@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 14</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <form action="/Day 10/10th_THA.html" class="submit_form" onsubmit="submitEvent(event)">
+   <label for="names">Name:</label>  
+   <input type="text" name="names" id="names" onfocus="focusEvent()" /> <br><br>
+   <label for="branch"> Branch: </label>
+   <select name="branch" onchange="changeEvent()" id="branch">
+   <option value="choose">Choose </option>
+   <option value="IT">IT </option>
+   <option value="CSE">CSE </option>
+   <option value="CSI">CSI </option>
+   <option value="CO">CO </option>
+   <option value="ECE">ECE </option>
+   </select> <br><br>
+   <input type="submit" value="Submit" onclick="clickEvent()" /> <br><br>
+   <textarea id="files" rows="10" style = "width:300px;" ondragover = "dragEvent()"  ondrop = "dropEvent(event)"></textarea>
+   </form>
+    <script src="main.js"></script>
+  </body>
+</html>
